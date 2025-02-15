@@ -1,0 +1,81 @@
+/* Logo Section */
+.logo-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; 
+    padding-right: 20px;
+    margin: 0; 
+    position: relative;
+    left: 10px;
+    top: 10px;
+    z-index: 10
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Action Buttons */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 20px; 
+    padding-right: 20px;
+    margin: 0; 
+    position: relative; 
+    top: -35px;
+    z-index: 10;
+}
+
+.action-bg-strip {
+    background-color: #F5EFEF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    width: fit-content; 
+    border-radius: 8px;
+}
+
+.action-buttons-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.btn-action {
+    background-color: #E6CBAF;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    line-height: 1; 
+}
+
+.btn-action:hover {
+    background-color: #D4B494;
+}
+
+/* Home & Book Now Buttons */
+.btn-home-book {
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1; 
+}
+
+.btn-home-book:hover {
+    background-color: #C4C4C4;
+}
+
+/* Font styling */
+h1 {
+    font-size: 16px;
+    margin: 0; 
+}
