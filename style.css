@@ -74,6 +74,43 @@
     background-color: #C4C4C4;
 }
 
+/*main Screen*/
+.main-screen{
+    display: flex;
+    flex-direction: column;   /* Arrange items from top to bottom */
+    justify-content: center;  /* Vertically center the items */
+    align-items: center;      /* Horizontally center the items */
+    height: 100vh;            /* Ensure it takes up the full height of the viewport */
+    width: 100%;              /* Ensure it spans the full width of the viewport */
+}
+
+#salon-background{
+    position: absolute;  /* Position it relative to the page */
+    top: 10%;
+    left: 0;
+    width: 100%;  /* Make the image span the entire width of the screen */
+    height: 90vh;  /* Make the image fill the full height of the viewport */
+    object-fit: cover;  /* Ensure the image covers the area without stretching */
+    z-index: -1;  /* Make sure the image stays behind the content */
+}
+
+/* Style for the Book Now button */
+.btn-central-book {
+    background-color: #E6CBAF; /* Light background */
+    color: black;
+    border-radius: 50px; /* Creates the pill shape */
+    padding: 16px 40px; /* Thicker padding for a more prominent pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s;
+}
+  
+.btn-central-book:hover {
+    background-color: #D4B494; /* Slightly darker on hover */
+}
+
+
 /* Font styling */
 h1 {
     font-size: 16px;
