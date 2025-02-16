@@ -104,7 +104,29 @@
     -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
 }
-
+#salon-background-return{
+    position: absolute;  /* Position it relative to the page */
+    left: 0;
+    width: 100%;  /* Make the image span the entire width of the screen */
+    height: 110vh;  /* Make the image fill the full height of the viewport */
+    object-fit: cover;  /* Ensure the image covers the area without stretching */
+    z-index: -1;  /* Make sure the image stays behind the content */
+    opacity: 0.5;
+}
+.btn-return-home{
+    background-color: #E6CBAF; /* Light background */
+    color: black;
+    border-radius: 300px; /* Creates the pill shape */
+    padding: 100px 200px; /* Thicker padding for a more prominent pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s;
+    font-size: 40px;
+}
+.btn-return-home:hover {
+    background-color: #D4B494; /* Slightly darker on hover */
+}
 /* Style for the Book Now button */
 .btn-central-book {
     background-color: #E6CBAF; /* Light background */
