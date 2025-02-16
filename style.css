@@ -1,5 +1,4 @@
 /*Top Bar*/
-/* Logo Section */
 .logo-section {
     display: flex;
     justify-content: flex-start;
@@ -92,32 +91,32 @@
 }
 
 #salon-background{
-    position: absolute;  /* Position it relative to the page */
+    position: absolute;  
     top: 10%;
     left: 0;
-    width: 100%;  /* Make the image span the entire width of the screen */
-    height: 90vh;  /* Make the image fill the full height of the viewport */
-    object-fit: cover;  /* Ensure the image covers the area without stretching */
-    z-index: -1;  /* Make sure the image stays behind the content */
+    width: 100%;  
+    height: 90vh;  
+    object-fit: cover;  
+    z-index: -1;  
     opacity: 0.5;
 
     -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 #salon-background-return{
-    position: absolute;  /* Position it relative to the page */
+    position: absolute;  
     left: 0;
-    width: 100%;  /* Make the image span the entire width of the screen */
-    height: 110vh;  /* Make the image fill the full height of the viewport */
-    object-fit: cover;  /* Ensure the image covers the area without stretching */
-    z-index: -1;  /* Make sure the image stays behind the content */
+    width: 100%;  
+    height: 110vh;  
+    object-fit: cover;  
+    z-index: -1;  
     opacity: 0.5;
 }
 .btn-return-home{
-    background-color: #E6CBAF; /* Light background */
+    background-color: #E6CBAF; 
     color: black;
-    border-radius: 300px; /* Creates the pill shape */
-    padding: 100px 200px; /* Thicker padding for a more prominent pill shape */
+    border-radius: 300px;
+    padding: 100px 200px; 
     text-decoration: none;
     font-weight: bold;
     line-height: 1;
@@ -125,14 +124,14 @@
     font-size: 40px;
 }
 .btn-return-home:hover {
-    background-color: #D4B494; /* Slightly darker on hover */
+    background-color: #D4B494; 
 }
 /* Style for the Book Now button */
 .btn-central-book {
-    background-color: #E6CBAF; /* Light background */
+    background-color: #E6CBAF; 
     color: black;
-    border-radius: 50px; /* Creates the pill shape */
-    padding: 16px 40px; /* Thicker padding for a more prominent pill shape */
+    border-radius: 50px; 
+    padding: 16px 40px; 
     text-decoration: none;
     font-weight: bold;
     line-height: 1;
@@ -140,7 +139,7 @@
 }
   
 .btn-central-book:hover {
-    background-color: #D4B494; /* Slightly darker on hover */
+    background-color: #D4B494; 
 }
 
 /* Font styling */
@@ -178,9 +177,9 @@ h2{
   /* Grid Styling */
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px; 
     margin-top: 20px;
   }
   
@@ -212,14 +211,14 @@ h2{
     margin: 0;
     font-size: 24px;
     font-weight: bold;
-    font-style: italic; /* Italicized service titles */
+    font-style: italic;
   }
   
   .service-item p {
     font-size: 16px;
     margin-top: 10px;
     font-weight: normal;
-    font-style: italic; /* Italicized service description */
+    font-style: italic;
   }
   
   .service-item:hover {
@@ -242,9 +241,9 @@ h2{
   
 .booking-row {
   display: flex;
-  justify-content: center; /* Keep ‘em centered, no mistreatin’ */
+  justify-content: center; 
   align-items: center;
-  gap: 20px; /* Space between, nice and even */
+  gap: 20px; 
   margin-top: 20px;
 
 }
@@ -258,7 +257,7 @@ h2{
 input, textarea {
     width: 100%;
     padding: 10px;
-    padding-left: 35px; /* Space for the icon */
+    padding-left: 35px; 
     border-radius: 50px;
     border: 1px solid #ccc;
     font-size: 16px;
@@ -568,5 +567,3 @@ iframe {
         height: 400px;
     }
 }
-
-
