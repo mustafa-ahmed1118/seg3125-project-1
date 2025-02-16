@@ -489,3 +489,68 @@ input[type="tel"], input[type="email"], input[type="text"], input[type="datetime
     font-size: 16px;
     color: #333;
   }
+
+ /* Contact and Location */
+.contact-container {
+    display: flex;
+    height: 100vh;
+    margin: 0; 
+    padding: 0;
+    justify-content: right;
+    padding-right: 60px;
+}
+
+.contact-info {
+    width: 300px;
+    background-color: #F5EFEF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.map-container {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+iframe {
+    width: calc(100vw - 500px); 
+    height: calc(100vh - 120px); 
+    border: none;
+    position: absolute; 
+    top: 120px; 
+    left: 0; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        width: 100%;
+        height: auto;
+        box-shadow: none; 
+    }
+    .map-container {
+        height: 400px;
+    }
+}
+
+
