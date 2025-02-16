@@ -241,9 +241,12 @@ h2{
 }
   
 .booking-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Keep ‘em centered, no mistreatin’ */
+  align-items: center;
+  gap: 20px; /* Space between, nice and even */
+  margin-top: 20px;
+
 }
   
 .input-container {
@@ -307,12 +310,21 @@ button:hover {
 }
 
 .choose-service-btn, .book-now-btn {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px; 
+  background-color: #E6CBAF;
+  color: black;
+  font-size: 18px;
+  text-decoration: none; 
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-
+.choose-service-btn:hover, .book-now-btn:hover {
+  background-color: #D4B494;
+}
 input[type="tel"], input[type="email"], input[type="text"], input[type="datetime-local"], textarea {
     padding-left: 35px; 
 }
@@ -417,17 +429,21 @@ input[type="tel"], input[type="email"], input[type="text"], input[type="datetime
   .testimonials-btn {
     padding: 15px 40px;
     border: none;
-    border-radius: 50px;
-    background-color: #E6CBAF;
-    color: white;
+    border-radius: 50px; 
+    background-color: #E6CBAF; 
+    color: black;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .testimonials-btn:hover {
-    background-color: #D4B494;
-  }
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.testimonials-btn:hover {
+    background-color: #D4B494; 
+    transform: scale(1.05);
+}
+
   
 
 .testimonials-container {
