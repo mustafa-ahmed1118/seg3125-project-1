@@ -324,4 +324,86 @@ input[type="tel"], input[type="email"], input[type="text"], input[type="datetime
     color: #888;
 }
 
+/*Stylist info / client info*/
+.profiles-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+
+  .profiles-header h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  .profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5EFEF;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .profile-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .profile-portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease; 
+  }
+  
+  .profile-description {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    max-width: 300px;
+  }
+
+  .testimonials-button {
+    text-align: center;
+  }
+  
+  .testimonials-btn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E6CBAF;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .testimonials-btn:hover {
+    background-color: #D4B494;
+  }
   
