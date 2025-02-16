@@ -1,3 +1,4 @@
+/*Top Bar*/
 /* Logo Section */
 .logo-section {
     display: flex;
@@ -78,14 +79,15 @@
     background-color: #C4C4C4;
 }
 
+/*Landing Page*/
 /*main Screen*/
 .main-screen{
     display: flex;
-    flex-direction: column;   /* Arrange items from top to bottom */
-    justify-content: center;  /* Vertically center the items */
-    align-items: center;      /* Horizontally center the items */
-    height: 100vh;            /* Ensure it takes up the full height of the viewport */
-    width: 100%;              /* Ensure it spans the full width of the viewport */
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;          
+    width: 100%;              
     gap: 40px;
 }
 
@@ -125,13 +127,14 @@ h1 {
     margin: 0; 
     font-family: 'Tangerine', Italiana;
 }
-
 h2{
-    font-family: 'Tangerine', Italianno;
+    font-size: 70px;
+    margin: 0; 
+    font-family: 'Tangerine', Italiana;
+    text-align: center;
 }
 
-/* Service description */
-/* General Container */
+/*Services Page*/
 .services-container {
     text-align: left;
     padding: 20px;
@@ -180,7 +183,7 @@ h2{
     height: 100%;
     object-fit: cover;
     opacity: 0.1;
-    z-index: -1; /* Place the image behind the text */
+    z-index: -1; 
   }
   
   .service-item h3 {
@@ -201,6 +204,124 @@ h2{
     opacity: 0.9;
   }
   
+/* Booking Page*/
+.booking-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
   
+.booking-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
   
+.booking-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+  
+.input-container {
+    position: relative;
+    flex: 1;
+    margin: 10px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px; /* Space for the icon */
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="datetime-local"] {
+    padding-left: 35px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+input[type="datetime-local"]::-webkit-datetime-edit {
+    font-size: 14px;
+}
+
+input[type="tel"], input[type="email"], input[type="text"] {
+    font-size: 16px;
+}
+  
+input + i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E6CBAF;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #D4B494;
+}
+
+.choose-service-btn, .book-now-btn {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+input[type="tel"], input[type="email"], input[type="text"], input[type="datetime-local"], textarea {
+    padding-left: 35px; 
+}
+
+
+.booking-row-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.phone-email-column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.name-column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.input-column input {
+    padding-left: 45px;
+}
+.phone-email-column .input-container i,
+.name-column .input-container i {
+    font-size: 20px;
+    color: #888;
+}
+
   
